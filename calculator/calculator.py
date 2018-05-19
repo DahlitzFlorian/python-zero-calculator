@@ -9,14 +9,14 @@ from calculator.helper import stack
 
 class Calculator:
     CONSTANTS = {"e", "pi"}
-    FUNCTIONS = {"sqrt", "log", "exp"}
+    FUNCTIONS = {"sqrt", "log", "exp", "sin", "cos", "tan"}
     OPERATIONS = {"+", "-", "*", "/", "**"}
 
     def __init__(self, func: str, x=None):
         self._tokens = stack.Stack().create_from_list(tokenize.tokenize(func))
         self._operators = stack.Stack()
         self._arguments = stack.Stack()
-        self._x = convert_to_number(x)
+        self._x = convert_to_number(x) if isinstance(x, str) else x
 
     def evaluate(self, x=None):
         while not self._tokens.is_empty():
@@ -88,6 +88,9 @@ class Calculator:
                 "exp": 4,
                 "log": 4,
                 "sqrt": 4,
+                "sin": 4,
+                "cos": 4,
+                "tan": 4
                 }
         assert operator in precedence, f"Invalid operator {operator}."
         return precedence[operator]
@@ -106,6 +109,12 @@ class Calculator:
                 result = math.log(rhs)
             elif op == "exp":
                 result = math.exp(rhs)
+            elif op == "sin":
+                result = math.sin(rhs)
+            elif op == "cos":
+                result = math.cos(rhs)
+            elif op == "tan":
+                result = math.tan(rhs)
             self._arguments.push(result)
             return
 
