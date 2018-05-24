@@ -175,7 +175,7 @@ def convert_to_number(number: Union[str, None]) -> Union[int, float]:
         return None
 
     try:
-        number = float(number)
+        number = int(number)
         return number
     except ValueError:
-        return int(number)
+        return float(number)
