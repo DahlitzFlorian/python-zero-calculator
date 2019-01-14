@@ -10,20 +10,20 @@ class Stack:
 
     def push(self, element):
         """
-        Adds an element on the top of the stack.
+        Add an element on the top of the stack.
         """
         self.stack.append(element)
 
     def pop(self):
         """
-        Removes the most recently added element of the stack.
+        Remove the most recently added element of the stack.
         """
         if not self.is_empty():
             self.stack.pop()
 
     def peek(self):
         """
-        Returns the most recently added element of the stack.
+        Return the most recently added element of the stack.
         If the stack is empty, it returns None.
         """
         if not self.is_empty():
@@ -33,7 +33,7 @@ class Stack:
 
     def is_empty(self):
         """
-        Returns a boolean representing the current status of the stack,
+        Return a boolean representing the current status of the stack,
         whether it's empty or not.
         """
         return not len(self.stack)
@@ -41,7 +41,7 @@ class Stack:
     @staticmethod
     def create_from_list(elements: list) -> "Stack":
         """
-        Gets a list of elements and creates a stack out of it.
+        Get a list of elements and creates a stack out of it.
         """
         s = Stack()
 

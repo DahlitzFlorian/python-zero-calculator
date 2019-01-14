@@ -4,7 +4,7 @@ from pytest import fail
 
 def test_stack_push():
     """
-    Creates an empty stack, pushes elements to it and compares the
+    Create an empty stack, pushes elements to it and compares the
     expected result with the actual property.
     """
     s = stack.Stack()
@@ -19,7 +19,7 @@ def test_stack_push():
 
 def test_stack_pop_non_empty():
     """
-    Creates an empty stack, pushes elements to it, removes elements and
+    Create an empty stack, pushes elements to it, removes elements and
     compares the expected result with the actual property.
     """
     s = stack.Stack()
@@ -36,7 +36,7 @@ def test_stack_pop_non_empty():
 
 def test_stack_pop_empty():
     """
-    Tries to pop the most recently added element from an empty stack.
+    Try to pop the most recently added element from an empty stack.
     """
     s = stack.Stack()
 
@@ -48,7 +48,7 @@ def test_stack_pop_empty():
 
 def test_stack_peek_non_empty():
     """
-    Creates an empty stack, pushes elements to it, removes elements and
+    Create an empty stack, pushes elements to it, removes elements and
     takes the most recently added element to compare it to the expected
     result.
     """
@@ -66,7 +66,7 @@ def test_stack_peek_non_empty():
 
 def test_stack_peek_empty():
     """
-    Creates an empty stack, tries to take the most recent element and
+    Create an empty stack, tries to take the most recent element and
     compares it to the expected result.
     """
     s = stack.Stack()
@@ -99,7 +99,7 @@ def test_stack_is_empty_empty():
 
 def test_stack_from_list():
     """
-    Creates a stack from a list and compares it to the expected result.
+    Create a stack from a list and compares it to the expected result.
     """
     elements = [42, "23", False, "Penguin"]
     solution = ["Penguin", False, "23", 42]
@@ -111,7 +111,7 @@ def test_stack_from_list():
 
 def test_stack_from_empty_list():
     """
-    Creates a stack from an empty list and compares it to the expected
+    Create a stack from an empty list and compares it to the expected
     result.
     """
     elements = []
