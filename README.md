@@ -33,7 +33,10 @@ provided beneath.
 - Zero Calculation using bisectioning
 
 ## Contribute ##
-All contributions are welcomed. Make sure, that your Code is [PEP8](https://www.python.org/dev/peps/pep-0008/) compliant.<br>
-While developing this project [flake8](http://flake8.pycqa.org/en/latest/) was used as Python linter.
+All contributions are welcomed. Make sure, that your Code is
+[PEP8](https://www.python.org/dev/peps/pep-0008/) compliant. While
+developing this project [flake8](http://flake8.pycqa.org/en/latest/)
+was used as Python linter. Using [Black](https://github.com/ambv/black)
+simplifies that.
 
 If you want to report any issues, make use of the [Issue Tracker](https://github.com/DahlitzFlorian/python-zero-calculator/issues) provided by GitHub.
