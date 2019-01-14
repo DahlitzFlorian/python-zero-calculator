@@ -17,7 +17,7 @@ def test_calculator_simple_evaluate_without_arg():
 
 def test_calculator_simple_evaluate_with_arg():
     """
-    Tests the calculator with a very basic function not containing
+    Test the calculator with a very basic function not containing
     functions like sin() or cos(). A parameter is specified for evaluate.
     """
     func = "x ** x - 8"
@@ -31,7 +31,7 @@ def test_calculator_simple_evaluate_with_arg():
 
 def test_calculator_complex_evaluate_without_arg():
     """
-    Tests the calculator with a more complex function containing
+    Test the calculator with a more complex function containing
     functions like sin() or cos(). No parameter is specified for evaluate.
     """
     func = "sin(pi) + x * 3"
@@ -45,7 +45,7 @@ def test_calculator_complex_evaluate_without_arg():
 
 def test_calculator_complex_evaluate_with_arg():
     """
-    Tests the calculator with a more complex function containing
+    Test the calculator with a more complex function containing
     functions like sin() or cos(). A parameter is specified for evaluate.
     """
     func = "sin(pi) + x * 3"
