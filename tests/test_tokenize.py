@@ -17,8 +17,29 @@ def test_tokenize_complex():
     operators. It also includes functions like sin() and con().
     """
     function = "x*x- 3 /sin( x +3* x) + cos(9*x)"
-    solution = ["x", "*", "x", "-", "3", "/", "sin", "(", "x", "+", "3",
-                "*", "x", ")", "+", "cos", "(", "9", "*", "x", ")"]
+    solution = [
+        "x",
+        "*",
+        "x",
+        "-",
+        "3",
+        "/",
+        "sin",
+        "(",
+        "x",
+        "+",
+        "3",
+        "*",
+        "x",
+        ")",
+        "+",
+        "cos",
+        "(",
+        "9",
+        "*",
+        "x",
+        ")",
+    ]
 
     assert tokenize.tokenize(function) == solution
 

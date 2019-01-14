@@ -39,7 +39,7 @@ class Calculator:
                     self._arguments.push(self._x)
                 continue
 
-            if (self._operators.is_empty() or next_operator == "("):
+            if self._operators.is_empty() or next_operator == "(":
                 self._operators.push(next_operator)
                 continue
 
@@ -47,8 +47,7 @@ class Calculator:
 
             if top_operator == "(" and next_operator == ")":
                 self._operators.pop()
-            elif (next_operator == ")" or
-                  self._eval_before(top_operator, next_operator)):
+            elif next_operator == ")" or self._eval_before(top_operator, next_operator):
                 self._pop_and_evaluate()
                 self._tokens.push(next_operator)
             else:
@@ -79,19 +78,19 @@ class Calculator:
         Gets an operator and returns the respective precedence.
         """
         precedence = {
-                "+": 1,
-                "-": 1,
-                "*": 2,
-                "/": 2,
-                "%": 2,
-                "**": 3,
-                "exp": 4,
-                "log": 4,
-                "sqrt": 4,
-                "sin": 4,
-                "cos": 4,
-                "tan": 4
-                }
+            "+": 1,
+            "-": 1,
+            "*": 2,
+            "/": 2,
+            "%": 2,
+            "**": 3,
+            "exp": 4,
+            "log": 4,
+            "sqrt": 4,
+            "sin": 4,
+            "cos": 4,
+            "tan": 4,
+        }
         assert operator in precedence, f"Invalid operator {operator}."
         return precedence[operator]
 
