@@ -15,16 +15,16 @@ provided beneath.
 
 ```python3
 >>> from calculator.calculator import Calculator
->>> calculation = "2 ** 3 + 9 / 3"
->>> c = Calculator(function)
+>>> func = "2 ** 3 + 9 / 3"
+>>> c = Calculator(func)
 >>> c.evaluate()
 11
 ```
 
 ```python3
 >>> from calculator.calculator import Calculator
->>> calculation = "x ** 3 + 8 / x"
->>> c = Calculator(function, 2)
+>>> func = "x ** 3 + 8 / x"
+>>> c = Calculator(func, 2)
 >>> c.evaluate()
 12
 ```
