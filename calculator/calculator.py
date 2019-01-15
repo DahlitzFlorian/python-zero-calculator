@@ -13,12 +13,18 @@ class Calculator:
     OPERATIONS = {"+", "-", "*", "/", "**"}
 
     def __init__(self, func: str, x=None):
+        self._func = func
         self._tokens = stack.Stack().create_from_list(tokenize.tokenize(func))
         self._operators = stack.Stack()
         self._arguments = stack.Stack()
         self._x = convert_to_number(x) if isinstance(x, str) else x
 
     def evaluate(self, x=None):
+        if self._tokens.is_empty():
+            self._tokens = stack.Stack().create_from_list(tokenize.tokenize(self._func))
+            self._operators = stack.Stack()
+            self._arguments = stack.Stack()
+
         while not self._tokens.is_empty():
             next_operator = self._tokens.peek()
             self._tokens.pop()
