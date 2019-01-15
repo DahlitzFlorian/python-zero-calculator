@@ -2,16 +2,16 @@
 [![Build Status](https://travis-ci.org/DahlitzFlorian/python-zero-calculator.svg?branch=master)](https://travis-ci.org/DahlitzFlorian/python-zero-calculator)
 ![black](https://img.shields.io/badge/code%20style-black-000000.svg)
 ## Description ##
-This package includes a basic zero calculator implemented in Python.<br>
-It's using bisectioning to compute the zero in a given interval. It was developed<br>
-more for educational purposes than for productive usage.
+This package includes a basic zero calculator implemented in Python.
+It's using bisectioning to compute the zero in a given interval. It was
+developed more for educational purposes than for productive usage.
 
-version 0.3dev
+version 0.3.1
 
 ## Features ##
 ### Available ###
-By know you are able to calculate certain things by importing the package. Examples are<br>
-provided beneath.
+By know you are able to calculate certain things by importing the
+package. Examples are provided beneath.
 
 ```python3
 >>> from calculator.calculator import Calculator
