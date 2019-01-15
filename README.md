@@ -6,7 +6,7 @@ This package includes a basic zero calculator implemented in Python.<br>
 It's using bisectioning to compute the zero in a given interval. It was developed<br>
 more for educational purposes than for productive usage.
 
-version 0.2dev
+version 0.3dev
 
 ## Features ##
 ### Available ###
@@ -31,6 +31,23 @@ provided beneath.
 
 ### Planned ###
 - Zero Calculation using bisectioning
+
+## Using Docker ##
+If you want to test the package without messing up your local
+dependencies, use docker instead:
+
+```PowerShell
+$ git clone <repo_url>
+$ cd python-zero-calculator
+$ docker image build -t zero-calculator .
+$ docker container run -it --rm --name zero zero-calculator
+```
+
+And from within the REPL import the package:
+
+```python3
+>>> from calculator import calculator
+```
 
 ## Contribute ##
 All contributions are welcomed. Make sure, that your Code is
