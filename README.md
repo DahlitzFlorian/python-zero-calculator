@@ -1,6 +1,7 @@
 # Zero Calculator #
 [![Build Status](https://travis-ci.org/DahlitzFlorian/python-zero-calculator.svg?branch=master)](https://travis-ci.org/DahlitzFlorian/python-zero-calculator)
 ![black](https://img.shields.io/badge/code%20style-black-000000.svg)
+[![Docker Automated Build](https://img.shields.io/badge/docker%20build-automated-blue.svg)](https://cloud.docker.com/u/floriandahlitz/repository/docker/floriandahlitz/python-zero-calculator)
 ## Description ##
 This package includes a basic zero calculator implemented in Python.
 It's using bisectioning to compute the zero in a given interval. It was
